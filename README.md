@@ -37,20 +37,15 @@ config = {
 }
 
 # setup menu ( first time only )
-print('remove all menus')
 api.remove_all_menus(True)
-
-print('create new rich-menu')
 resp = api.create_menu(config, './sample.png')
 menu_id = resp['richMenuId']
 
 # link/unlink menu (per user) as much as you want
-print('link menu to user')
 api.unlink_user_menu(user_id)
 api.link_user_menu(user_id, menu_id)
 
 # view script result
-print('list menu(s)')
 pp(api.list_menus())
 ```
 ### Reference(s)
