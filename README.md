@@ -36,7 +36,7 @@ config = {
     ]
 }
 
-# setup menu 1 time only
+# setup menu ( first time only )
 print('remove all menus')
 api.remove_all_menus(True)
 
