@@ -60,6 +60,7 @@ if __name__ == "__main__":
     import os
     from pprint import pprint as pp
 
+    # init api
     access_token = os.environ.get('LINE_ACCESS_TOKEN')
     api = LINERichmenuAPI(access_token)
 
